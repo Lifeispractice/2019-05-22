@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=gb2312" />
+<meta name="Robots" content="all" />
+<meta name="Author" content="tiancity" />
+<meta name="Copyright" content=" tiancity" />
+<meta name="description" content="韩国Nexon旗下著名游戏工作室devCAT打造的MMORPG《洛奇》，拥有着宏大的世界观及无可比拟的丰富系统。其独特的北欧风情与日本动漫相结合的画面让玩家们在体验魔幻冒险时更能享受到如田园牧歌般悠闲的快乐生活。" />
+<meta name="keywords" content="洛奇官方网站,远古争霸,mabinogi,luoqi,洛奇,世纪天成,天成,nexon,邮通,devCat,圣骑,巨人,精灵,人类,帕拉丁,暗黑,骑士,泰坦,北欧神话,中世纪,动作,竞技,PK,格斗,PVP,对战,主线,剧情,任务,变身,女神,娜儿,梦想生活,茉莉安,3D游戏,卡通游戏,漫画风格,德鲁伊,吟游诗人,魔法扫帚,动作系统,社交,动作,龙,红龙,巨龙,屠龙,火山,萌,宅,凯尔特,工会战" />
+<title>180307-洛奇12周年庆典-摩天轮</title>
+<link rel="stylesheet" href="https://img1.tiancitycdn.com/lq/event/2017/1101celebration/css/style.css?v=171129"/>
+<script src="https://image.tiancity.com/common/js/jquery-1.4.2.min.js"></script>
+<script src="https://img1.tiancitycdn.com/mobile/plugs/Pandora.ImageSwitch.min.js"></script>
+<script src="https://img1.tiancitycdn.com/mobile/plugs/Pandora.Share.js"></script>
+<script src="https://img1.tiancitycdn.com/mobile/plugs/Pandora.Dialog.min.js"></script>
+<script>
+share_txt={
+    stitle:'', //也可不填写,保留空 分享的文字
+    spic:'' //也可不填写,保留空 分享的图片
+};
+</script>
+</head>
+
+<body>
+<div class="top"><script type="text/javascript" src="https://images.tiancity.com/include/portal/gnb.js"></script></div>
+<div class="container">
+	<!--main_box-->
+	<div class="boxs">
+		<div class="section section_01">
+			<div class="main">
+				<a href="https://luoqi.tiancity.com/homepage/v3/index.html" class="logo" target="_blank">官网首页</a>
+				<div class="share">
+					<a class="registered sprite hdt" href="https://member.tiancity.com/Registration/gameReg.aspx?skin=mabi&from=mabi" target="_blank">快速注册</a>
+					<a class="home sprite hdt" href="https://luoqi.tiancity.com/homepage/v3/index.html" target="_blank">返回首页</a>
+					<a class="down sprite hdt" href="https://luoqi.tiancity.com/homepage/v3/download/download.html" target="_blank">客户端下载</a>
+					<a class="tx sprite hdt" href="javascript:$.Share('tx',share_txt);">腾讯微博</a>
+					<a class="sn sprite hdt" href="javascript:$.Share('sn',share_txt);">新浪微博</a>
+				</div>
+				<div class="slogan"></div>
+				<div class="lun">
+					<div class="mtl"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!---bg--->
+	<div class="bg">
+		<div class="bg1"></div>
+		<div class="bg2"></div>
+		<div class="bg3"></div>
+		<div class="bg4"></div>
+		<div class="bg5"></div>
+		<div class="bg6"></div>
+	</div>
+</div>
+<div class="dialog"><a class="close" href="javascript:void(0)"></a></div>
+<div class="footer"><script type="text/javascript" src="https://luoqi.tiancity.com/homepage/v3/copyright/luoqi_copyright_gbk.js"></script></div>
+<script>
+	//
+	var Urls = [
+		{url:'https://evt.tiancity.com/luoqi/51761/home/index.php'},
+		{url:'https://luoqi.tiancity.com/homepage/event/2017/1031Comics/'},
+		{url:'https://evt.tiancity.com/luoqi/51769/home/index.php'},
+		{url:'https://luoqi.tiancity.com/homepage/event/2017/1115wonderful/'},
+		{url:'https://evt.tiancity.com/luoqi/51764/home/index.php'},
+		{url:'https://luoqi.tiancity.com/homepage/event/2017/1121act/'},
+		{url:'https://evt.tiancity.com/luoqi/51772/home/index.php'},
+		{url:'https://luoqi.tiancity.com/homepage/event/2017/1122ser/'},
+		{url:'https://evt.tiancity.com/luoqi/51775/home/index.php'},
+		{url:'https://luoqi.tiancity.com/homepage/event/2017/1129Devout/'},
+		{url:'https://luoqi.tiancity.com/homepage/event/2017/1129event/'},
+		{url:'https://luoqi.tiancity.com/homepage/event/2017/1206act/'}
+	];
+	var _str = '';
+	$.each(Urls,function(i,obj){
+		//_str +='<a class="mtl_li mtl_li'+(i+1)+'" href="'+obj.url+'" target="_blank"></a>';
+		_str +='<a class="mtl_li mtl_li'+(i+1)+'" href="'+(( Urls[i].url == '')?'javascript:$(\'.dialog\').Dialog()':''+obj.url+'')+'" target="_blank"></a>';
+//		_str +=(Urls[i].url == '')?
+//		'<a class="mtl_li mtl_li'+(i+1)+'"  href="javascript:$(\'.dialog\').Dialog()" target="_blank"></a>':
+//		'<a class="mtl_li mtl_li'+(i+1)+'"  href="'+obj.url+'" target="_blank"></a>';
+	});
+	$('.mtl').append(_str);
+</script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="all" />
+<meta name="author" content="CSOLteam" />
+<link rel="shortcut icon" href="https://csol.tiancity.com/favicon.ico" />
+<meta name="description" content="反恐精英Online官方网站，玩家最喜爱的FPS人气网游，火爆战场真实体验!" />
+<meta name="keywords" content="csol,反恐精英,cs,生化模式,反恐精英Online,csol官网,反恐精英ol,csol下载,中国僵尸,K1大赛,FPS射击游戏,僵尸,T阵营,CT阵营,世纪天成" />
+<title>游戏设计调研 - 反恐精英Online-官方网站</title>
+<link rel="stylesheet" type="text/css" href="https://img1.tiancitycdn.com/project1/csol/event/cs160203act/css/basic.css">
+<link rel="stylesheet" href="https://img1.tiancitycdn.com/project5/fs2/event/2018/fs180205/css/animate.css">
+<link rel="stylesheet" href="https://img1.tiancitycdn.com/project5/csol2/event/2017/0519event/css/jquery.rollbar.css">
+<link rel="stylesheet" type="text/css" href="https://img1.tiancitycdn.com/project1/csol/event/2018/07/cs180717event/css/base.css">
+</head>
+<body>
+<div class="wrapper">
+<div class="light animated"></div>
+<div class="stone" data-slide-mode="10" data-slide-step="30" data-slide-speed="30"></div>
+    <div class="section">
+        <div class="con con_1">
+			<a href="https://csol.tiancity.com/homepage/v5/index.html" class="logo" target="_blank"></a>
+			<div class="theme animated pulse"></div>
+			<div class="pople animated fadeIn"></div>
+			<p class="login">您好，请&nbsp;&nbsp;<a href="javascript:;">登录</a></p>
+	  </div>
+	  <div class="con con_2">
+		<ul class="matrix matrix1"></ul>
+		<div class="ticket">
+			<div class="ticket_num like"><input value="500" name="" class="txtRedVote" disabled="disabled" type="text"></div>
+			<div class="ticket_num commonly"><input value="300" name="" class="txtRedVote" disabled="disabled" type="text"></div>
+			<div class="ticket_num dislike"><input value="200" name="" class="txtRedVote" disabled="disabled" type="text"></div>
+		</div>
+	  </div>
+	  <div class="con con_3 prizeList">
+		<ul class="matrix matrix2 listBox"></ul>
+		<div class="ticket">
+			<div class="ticket_num like"><input value="500" name="" class="txtRedVote" disabled="disabled" type="text"></div>
+			<div class="ticket_num commonly"><input value="300" name="" class="txtRedVote" disabled="disabled" type="text"></div>
+			<div class="ticket_num dislike"><input value="200" name="" class="txtRedVote" disabled="disabled" type="text"></div>
+		</div>
+		<div class="sub_btn"><input type="submit" class="submit" onclick="showDialog.show(dialog1);"></div>
+<!-- 		<div class="sub_btn"><input type="submit" class="submit" onclick="showDialog.show(dialog2);"></div> -->
+<!-- 		<div class="sub_btn"><input type="submit" class="submit" onclick="showDialog.show(dialog3);"></div> -->
+	  </div>
+    </div>
+    <div class="bg">
+        <div class="bg_01"></div>
+        <div class="bg_02"></div>
+        <div class="bg_03"></div>
+        <div class="bg_04"></div>
+        <div class="bg_05"></div>
+        <div class="bg_06"></div>
+        <div class="bg_07"></div>
+        <div class="bg_08"></div>
+        <div class="bg_09"></div>
+        <div class="bg_10"></div>
+	<div class="bg_11"></div>
+        <div class="bg_12"></div>
+        <div class="bg_13"></div>
+        <div class="bg_14"></div>
+        <div class="bg_15"></div>
+    </div>
+</div>
+<!-- 弹窗  -->
+<div class="pop pop1" id="dialog1">
+	<a class="close" onclick="showDialog.hide(dialog1);">×</a>
+	<p class="text text1">至少需要选择1项喜欢及1项不喜欢的霸主角色哦~</p>
+	<a href="javascript:;" class="choice choice1">继续选择</a>
+</div>
+<div class="pop pop2" id="dialog2">
+	<a class="close" onclick="showDialog.hide(dialog2);">×</a>
+	<p class="text text2">至少需要选择5项喜欢及5项不喜欢的普通角色哦~</p>
+	<a href="javascript:;" class="choice choice2">继续选择</a>
+</div>
+<div class="pop pop3" id="dialog3">
+	<a class="close" onclick="showDialog.hide(dialog3);">×</a>
+	<p class="text text3">已经选择完毕了吗？点击确认提交问卷咯！~</p>
+	<a href="javascript:;" class="choice choice3">确认</a>
+	<a href="javascript:;" class="choice choice4">继续选择</a>
+</div>
+<script  src="https://csol.tiancity.com/homepage/copyright/pageTop_utf8.js"></script>
+<div id="footer"><script src="https://csol.tiancity.com/homepage/copyright/csol_copyright_utf8.js"></script></div>
+<script type="text/javascript" src="https://image.tiancity.com/common/js/jquery-1.7.2.min.js"></script>
+<script src="https://img1.tiancitycdn.com/project1/csol/common/jquery.rollbar.min.js"></script>
+<script src="https://img1.tiancitycdn.com/project1/csol/common/jquery.mousewheel.js"></script>
+<script src="https://img1.tiancitycdn.com/project1/csol/common/common-1.2.3-utf8.min.js"></script>
+<script type="text/javascript" src="https://img1.tiancitycdn.com/project1/csol/event/2017/07/cs1707019event/js/dialog.min.js"></script>
+<script src="https://img1.tiancitycdn.com/project1/csol/event/2018/07/cs180717event/js/base.js?1"></script>
+<script>
+function showTime(){
+		$('.light').fadeIn(1000).fadeOut(1000);
+	};
+	setInterval('showTime()',0);
+$(function(){
+	var like = $(".ticket .like input").val(),
+	commonly = $(".ticket .commonly input").val(),
+	dislike = $(".ticket .dislike input").val(),
+	voteAnd = parseInt(like)+parseInt(commonly)+parseInt(dislike),
+	likeWidth= Math.floor(((parseInt(like))/(voteAnd))*100*7.12),
+	commonlyWidth = Math.floor(((parseInt(commonly))/(voteAnd))*100*7.12),
+	dislikeWidth = Math.floor(((parseInt(dislike))/(voteAnd))*100*7.12);
+	$('.ticket .like').css({'width':likeWidth});
+	$('.ticket .commonly').css({'width':commonlyWidth});
+	$('.ticket .dislike').css({'width':dislikeWidth});
+
+//	心添加class
+	$(".matrix li a.fabulous1").click(function(){
+		$(this).addClass('fabulous3').siblings().removeClass('fabulous4');
+		$(this).parent().addClass('select');
+	});
+	$(".matrix li a.fabulous2").click(function(){
+		$(this).addClass('fabulous4').siblings().removeClass('fabulous3');
+		$(this).parent().addClass('select');
+	});
+	$(".sub_btn .submit").click(function(){
+		$(this).addClass('submission');
+	});
+})
+</script>
+ </body>
+</html>
+
