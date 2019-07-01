@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="gb2312">
+    <meta name="robots" content="all" />
+    <meta name="author" content="CSOLteam" />
+    <link rel="shortcut icon" href="https://csol.tiancity.com/favicon.ico" />
+    <meta name="description" content="反恐精英Online官方网站,玩家最喜爱的FPS人气网游,火爆战场真实体验!全新缔造者模式上线，缔造属于你的枪战世界！关注官方网站了解最新游戏资讯。" />
+    <meta name="keywords" content="csol,反恐精英,cs,生化模式,反恐精英Online,csol官网,反恐精英ol,csol下载,中国僵尸,K1大赛,FPS射击游戏,僵尸,T阵营,CT阵营,世纪天成" />
+    <title>最经典的FPS游戏-《反恐精英Online》官方网站</title>
+	<link rel="stylesheet" href="https://img1.tiancitycdn.com/project1/csol/common/normalize.min.css">
+	<link rel="stylesheet" href="https://img1.tiancitycdn.com/csol/homepage/v6/new/css/jquery.slider.css" />
+	<link rel="stylesheet" href="https://img1.tiancitycdn.com/csol/homepage/v6/new/css/base.css?v=180919">
+	<script src="https://img1.tiancitycdn.com/project1/csol/common/jquery-1.7.2.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://img1.tiancitycdn.com/project1/csol/event/2017/10/cs171018event/css/animate.css">
+</head>
+<style type="text/css">
+.btn-evt.mb20{display:none !important;}
+</style>
+<body>
+	<!-- 白头 -->
+	<div class="header">
+		<script src="https://images.tiancity.com/include/portal/gnb-utf8.js"></script>
+	</div>
+
+	<div class="pr main">
+		<!-- 公共导航菜单 -->
+		<script src="https://img1.tiancitycdn.com/csol/homepage/v6/new/js/menu.js?v=190615"></script>
+
+		<!-- 头部广告 -->
+		<!-- <script language="javascript" src="https://tcmgt.tiancity.com/layout.aspx?pst=2015&uparams=CS06sybg01" charset="gb2312"></script> -->
+		<style>
+			.main{overflow: hidden;}
+			.video {position: absolute;top:90px;left:50%;margin-left:-960px;width:1920px;}
+			.video-1 {z-index:1;}
+			.video-2 {z-index:2;top:90px;height:425px;display: none;}
+			.section,.act-bar,.ad-logo {z-index:3;}
+			.ad-logo {width:430px;height:192px;background:url(https://img1.tiancitycdn.com/project1/csol/event/2018/09/cs180813act/images/ad-logo.png) no-repeat 0 0;top:100px;left:50%;margin-left:-215px;}
+			.act-bar .btn-act {width:150px;font-size:24px;font-weight:bold;top:300px;margin-left:-85px;background:rgba(13, 13, 13, .76);border-color:rgba(13, 13, 13, .76);}
+			.act-bar .btn-act span {color:#fff;}
+			.act-bar .btn-act:hover {background:rgba(13, 13, 13, .76);border-color:rgba(13, 13, 13, .76);}
+		</style>
+		<video src="https://img1.tiancitycdn.com/project1/csol/event/2018/09/cs180813act/header.mp4" class="video video-1" autoplay="autoplay" loop="loop"></video>
+		<video src="https://img1.tiancitycdn.com/project1/csol/event/2018/09/cs180813act/header_m.mp4" class="video video-2" autoplay="autoplay" loop="loop"></video>
+		<div class="video video-2"></div>
+		<script>
+			var videoTimer = null;
+			$(function(){
+				$(window).scroll(function(){
+					var st = $(document).scrollTop();
+					if(st>=100 && !videoTimer){
+						videoTimer = setTimeout(function(){
+							$('.video-2').fadeIn();
+						},1200);
+					}
+				});
+			})
+		</script>
+		<!-- 悬浮快速注册 -->
+		<a href="javascript:" class="reg-btn" id="regBtn"></a>
+		<div class="reg-content" id="regCon">
+			<a href="javascript:" class="pa close-btn"></a>
+			<div class="regform">
+				<iframe width="330" scrolling="no" height="370" frameborder="0" src="https://member.tiancity.com/Registration/newquickReg.aspx?from=csoquick&amp;gb=2&amp;type=cso_regist&amp;fromurl=http://csol.tiancity.com/" allowtransparency="allowtransparency" border="0"></iframe>
+			</div>
+			<div class="down"><a title="立即下载" href="http://csol.tiancity.com/homepage/article/download/Class_297_Time_1.html">立即下载</a></div>
+		</div>
+
+		<div class="pr act-bar act-show">
+			<a href="https://csol.tiancity.com/homepage/event/2019/06/cs190619sale/" target="_blank" class="pa ad-logo"></a>
+			<a href="https://csol.tiancity.com/homepage/event/2019/06/cs190619sale/" target="_blank" class="pa btn-act" id="actBtn" data-text="版本介绍"><span>版</span><span>本</span><span>介</span><span>绍</span></a>
+		</div>
+		<div class="pr section clearfix sect-top">
+			<div class="pa sect-top-bg"></div>
+			<div class="pa con">
+				<!-- 下载按钮 -->
+				<div class="col-left sect-download">
+					<a href="https://csol.tiancity.com/homepage/v6/download/" target="_blank" class="btn-download">游戏下载</a>
+					<a href="https://member.tiancity.com/Registration/PhoneGameReg.aspx?skin=cso&from=cso" target="_blank" class="btn-register">账号注册</a>
+					<a href="https://pay.tiancity.com/Bank/Bank/Pay?ServiceCodeShort=cso" target="_blank" class="btn-charge">账号充值</a>
+				</div>
+				<!-- 下载按钮 END -->
+				<div class="col-right">
+					<!-- 广告位 -->
+					<ul class="fl sect-banner">
+						<li>
+							<script language="javascript" src="https://tcmgt.tiancity.com/layout.aspx?pst=2016&uparams=CS06sy01TO" charset="gb2312"></script>
+						</li>
+					    <li>
+					    	<script language="javascript" src="https://tcmgt.tiancity.com/layout.aspx?pst=2017&uparams=CS06sy02TO" charset="gb2312"></script>
+					    </li>
+					    <li>
+					    	<script language="javascript" src="https://tcmgt.tiancity.com/layout.aspx?pst=2018&uparams=CS06sy03TO" charset="gb2312"></script>
+					    </li>
+					    <li>
+					    	<script language="javascript" src="https://tcmgt.tiancity.com/layout.aspx?pst=2019&uparams=CS06sy04TO" charset="gb2312"></script>
+					    </li>
+					    <li>
+					    	<script language="javascript" src="https://tcmgt.tiancity.com/layout.aspx?pst=2020&uparams=CS06sy05TO" charset="gb2312"></script>
+					    </li>
+					    <li>
+					    	<script language="javascript" src="https://tcmgt.tiancity.com/layout.aspx?pst=2021&uparams=CS06sy06TO" charset="gb2312"></script>
+					    </li>
+					</ul>
+					<!-- 广告位 END -->
+
+					<!-- 快速入口 -->
+					<div class="sect-btns">
+						<a href="https://csol.tiancity.com/homepage/v6/recruit/num01.html" target="_blank" class="btn-1"><p>新兵入口</p></a>
+						<a href="https://csol.tiancity.com/homepage/event/2017/11/cs171122exclusive" target="_blank" class="btn-2"><p>特权通道</p></a>
+						<a href="https://csol.tiancity.com/homepage/event/2017/07/cs170801Plugin" target="_blank" class="btn-3"><p>违规举报</p></a>
+					</div>
+					<!-- 快速入口 END -->
+				</div>
+			</div>
+		</div>
+		<div class="pr section clearfix">
+			<div class="con">
+				<!-- 活动中心 -->
+				<div class="col-left sect-hot">
+					<p class="title">
+						<a href="http://evt.tiancity.com/portal/eventlog/csol" target="_blank" class="more">更多 +</a>
+						活动中心
+					</p>
+					<div class="btn-hot mb20">
+						<script language="javascript" src="https://tcmgt.tiancity.com/layout.aspx?pst=2022&uparams=CS06sy01ho" charset="gb2312"></script>
+					</div>
+					<div class="btn-hot">
+						<script language="javascript" src="https://tcmgt.tiancity.com/layout.aspx?pst=2023&uparams=CS06sy02ho" charset="gb2312"></script>
+					</div>
+				</div>
+				<!-- 活动中心 END -->
+				<div class="col-right">
+					<!-- 新闻资讯 -->
+					<div class="fl sect-news">
+						<p class="title">
+							<a href="https://csol.tiancity.com/homepage/article/Class_4_Time_1.html" target="_blank" class="more">更多 +</a>
+							新闻资讯
+						</p>
+						<ul class="news-nav">
+							<li class="on"><a href="javascript:">综合<i></i></a></li>
+							<li><a href="javascript:">热点<i></i></a></li>
+							<li><a href="javascript:">活动<i></i></a></li>
+							<li><a href="javascript:">赛事<i></i></a></li>
+							<li><a href="javascript:">公告<i></i></a></li>
+						</ul>
+						<div class="news-bar on">		<ul>
+															<li class="top_news">
+						<a href="//csol.tiancity.com/homepage/article/2019/06/19/57138.html" target="_blank">超凡新角色降临 全新僵尸恐怖登场</a>
+					</li>
+																		 <li>
+					<a href="//csol.tiancity.com/homepage/article/2019/06/18/57128.html" target="_blank">
+						<span class="news_type">
+												【活动】
+												</span>
+						猎魔行动：六月行军季活动介绍
+						<span class="news_date">06/18</span>
+					</a>
+				</li>
+																		 <li>
+					<a href="http://www.duowan.com/news/424349793503.html" target="_blank">
+						<span class="news_type">
+												【热点】
+												</span>
+						【多玩】超凡新角色配音花絮：天使与龙女的宿怨纠葛
+						<span class="news_date">06/13</span>
+					</a>
+				</li>
+																		 <li>
+					<a href="//csol.tiancity.com/homepage/article/2019/06/12/57092.html" target="_blank">
+						<span class="news_type">
+												【公告】
+												</span>
+						天成充值中心升级公告
+						<span class="news_date">06/12</span>
+					</a>
+				</li>
+																		 <li>
+					<a href="//csol.tiancity.com/homepage/article/2019/06/17/57126.html" target="_blank">
+						<span class="news_type">
+												【赛事】
+												</span>
+						天王山之战新王加冕 2019TGG夏季杯圆满落幕
+						<span class="news_date">06/17</span>
+					</a>
+				</li>
+																		 <li>
+					<a href="//csol.tiancity.com/homepage/article/2019/06/14/57117.html" target="_blank">
+						<span class="news_type">
+												【赛事】
+												</span>
+						TGG小组赛迎最大冷门 明日总决赛巅峰来袭
+						<span class="news_date">06/14</span>
+					</a>
+				</li>
+																		 <li>
+					<a href="//csol.tiancity.com/homepage/article/2019/06/13/57114.html" target="_blank">
+						<span class="news_type">
+												【赛事】
+												</span>
+						决战魔都 2019TGG夏季杯全国总决赛即将开幕
+						<span class="news_date">06/13</span>
+					</a>
+				</li>
+									</ul></div>
+						<div class="news-bar"><ul>
+															<li class="top_news">
+						<a href="//csol.tiancity.com/homepage/article/2019/06/19/57138.html" target="_blank">超凡新角色降临 全新僵尸恐怖登场</a>
+					</li>
+																		 <li>
+					<a href="http://www.duowan.com/news/424349793503.html" target="_blank">
+						<span class="news_type">
+												【热点】
+												</span>
+						【多玩】超凡新角色配音花絮：天使与龙女的宿怨纠葛
+						<span class="news_date">06/13</span>
+					</a>
+				</li>
+																		 <li>
+					<a href="//csol.tiancity.com/homepage/article/2019/06/05/57066.html" target="_blank">
+						<span class="news_type">
+												【热点】
+												</span>
+						新霸主狂暴登场！8个枪口的冲锋枪谁顶得住
+						<span class="news_date">06/05</span>
+					</a>
+				</li>
+																		 <li>
+					<a href="//csol.tiancity.com/homepage/article/2019/05/30/57040.html" target="_blank">
+						<span class="news_type">
+												【热点】
+												</span>
+						全新霸主武器曝光 科幻风机械臂硬核登场！
+						<span class="news_date">05/30</span>
+					</a>
+				</li>
+																		 <li>
+					<a href="http://www.duowan.com/news/421840864835.html" target="_blank">
+						<span class="news_type">
+												【热点】
+												</span>
+						【多玩】X系列首款手枪登场 开镜索敌例无虚发
+						<span class="news_date">05/15</span>
+					</a>
+				</li>
+																		 <li>
+					<a href="http://www.duowan.com/news/421408223350.html" target="_blank">
+						<span class="news_type">
+												【热点】
+												</span>
+						【多玩】稀有彩漆限时上线 给你们点颜色瞧瞧！
+						<span class="news_date">05/10</span>
+					</a>
+				</li>
+																		 <li>
+					<a href="//csol.tiancity.com/homepage/article/2019/05/09/56910.html" target="_blank">
+						<span class="news_type">
+												【热点】
+												</span>
+						配件武器的春天！ 配件拍卖会即将开启！
+						<span class="news_date">05/09</span>
+					</a>
+				</li>
+									</ul></div>
+						<div class="news-bar"><ul>
+															<li class="top_news">
+						<a href="//csol.tiancity.com/homepage/article/2019/06/18/57128.html" target="_blank">猎魔行动：六月行军季活动介绍</a>
+					</li>
+																		 <li>
+					<a href="//csol.tiancity.com/homepage/article/2019/06/20/57156.html" target="_blank">
+						<span class="news_type">
+												【活动】
+												</span>
+						“猎魔行动”数据异常补偿公告
+						<span class="news_date">06/20</span>
+					</a>
+				</li>
+																		 <li>
+					<a href="//csol.tiancity.com/homepage/article/2019/06/13/57110.html" target="_blank">
+						<span class="news_type">
+												【活动】
+												</span>
+						缔造者地图征集获奖信息开放填写公告
+						<span class="news_date">06/13</span>
+					</a>
+				</li>
+																		 <li>
+					<a href="//csol.tiancity.com/homepage/article/2019/06/12/57103.html" target="_blank">
+						<span class="news_type">
+												【活动】
+												</span>
+						家园保卫战活动获奖信息开放填写公告
+						<span class="news_date">06/12</span>
+					</a>
+				</li>
+																		 <li>
+					<a href="//csol.tiancity.com/homepage/article/2019/06/06/57073.html" target="_blank">
+						<span class="news_type">
+												【活动】
+												</span>
+						端午直播嗨3天！R男 丹雅 SK联袂登场
+						<span class="news_date">06/06</span>
+					</a>
+				</li>
+																		 <li>
+					<a href="//csol.tiancity.com/homepage/article/2019/05/23/57004.html" target="_blank">
+						<span class="news_type">
+												【活动】
+												</span>
+						六一版本新福利 年神霸主免费用
+						<span class="news_date">05/23</span>
+					</a>
+				</li>
+																		 <li>
+					<a href="//csol.tiancity.com/homepage/article/2019/05/22/56992.html" target="_blank">
+						<span class="news_type">
+												【活动】
+												</span>
+						团战决战 勋章荣耀活动发奖公告
+						<span class="news_date">05/22</span>
+					</a>
+				</li>
+									</ul></div>
+						<div class="news-bar"><ul>
+															<li class="top_news">
+						<a href="//csol.tiancity.com/homepage/article/2019/06/17/57126.html" target="_blank">天王山之战新王加冕 2019TGG夏季杯圆满落幕</a>
+					</li>
+																		 <li>
+					<a href="//csol.tiancity.com/homepage/article/2019/06/14/57117.html" target="_blank">
+						<span class="news_type">
+												【赛事】
+												</span>
+						TGG小组赛迎最大冷门 明日总决赛巅峰来袭
+						<span class="news_date">06/14</span>
+					</a>
+				</li>
+																		 <li>
+					<a href="//csol.tiancity.com/homepage/article/2019/06/13/57114.html" target="_blank">
+						<span class="news_type">
+												【赛事】
+												</span>
+						决战魔都 2019TGG夏季杯全国总决赛即将开幕
+						<span class="news_date">06/13</span>
+					</a>
+				</li>
+																		 <li>
+					<a href="//csol.tiancity.com/homepage/article/2019/06/10/57076.html" target="_blank">
+						<span class="news_type">
+												【赛事】
+												</span>
+						南京赛战罢 2019TGG夏季杯四城赛顺利收官
+						<span class="news_date">06/10</span>
+					</a>
+				</li>
+																		 <li>
+					<a href="//csol.tiancity.com/homepage/article/2019/06/06/57074.html" target="_blank">
+						<span class="news_type">
+												【赛事】
+												</span>
+						争夺最后晋级名额！TGG夏季杯四城赛收官战即将打响
+						<span class="news_date">06/06</span>
+					</a>
+				</li>
+																		 <li>
+					<a href="//csol.tiancity.com/homepage/article/2019/06/03/57055.html" target="_blank">
+						<span class="news_type">
+												【赛事】
+												</span>
+						古城战罢TGG夏季杯西安站圆满结束
+						<span class="news_date">06/03</span>
+					</a>
+				</li>
+																		 <li>
+					<a href="//csol.tiancity.com/homepage/article/2019/05/31/57049.html" target="_blank">
+						<span class="news_type">
+												【赛事】
+												</span>
+						古城鏖战！2019TGG夏季杯西安站火热开启
+						<span class="news_date">05/31</span>
+					</a>
+				</li>
+									</ul></div>
+						<div class="news-bar"><ul>
+															<li class="top_news">
+						<a href="//csol.tiancity.com/homepage/article/2019/06/12/57092.html" target="_blank">天成充值中心升级公告</a>
+					</li>
+																		 <li>
+					<a href="//csol.tiancity.com/homepage/article/2019/06/25/57170.html" target="_blank">
+						<span class="news_type">
+												【公告】
+												</span>
+						06月26日服务器例行维护公告[已结束]
+						<span class="news_date">06/25</span>
+					</a>
+				</li>
+																		 <li>
+					<a href="//csol.tiancity.com/homepage/article/2019/06/19/57151.html" target="_blank">
+						<span class="news_type">
+												【公告】
+												</span>
+						06月20日服务器临时维护公告[已结束]
+						<span class="news_date">06/19</span>
+					</a>
+				</li>
+																		 <li>
+					<a href="//csol.tiancity.com/homepage/article/2019/06/19/57143.html" target="_blank">
+						<span class="news_type">
+												【公告】
+												</span>
+						06月19日更新维护结束公告
+						<span class="news_date">06/19</span>
+					</a>
+				</li>
+																		 <li>
+					<a href="//csol.tiancity.com/homepage/article/2019/06/19/57142.html" target="_blank">
+						<span class="news_type">
+												【公告】
+												</span>
+						游戏内充值功能异常公告
+						<span class="news_date">06/19</span>
+					</a>
+				</li>
+																		 <li>
+					<a href="//csol.tiancity.com/homepage/article/2019/06/19/57140.html" target="_blank">
+						<span class="news_type">
+												【公告】
+												</span>
+						06月19日服务器维护延迟公告[已结束]
+						<span class="news_date">06/19</span>
+					</a>
+				</li>
+																		 <li>
+					<a href="//csol.tiancity.com/homepage/article/2019/06/18/57133.html" target="_blank">
+						<span class="news_type">
+												【公告】
+												</span>
+						06月19日服务器更新维护公告
+						<span class="news_date">06/18</span>
+					</a>
+				</li>
+									</ul></div>
+					</div>
+					<!-- 新闻资讯 END -->
+
+					<!-- 精彩视频  -->
+					<div class="fl sect-video">
+						<p class="title">
+							<a href="https://csol.tiancity.com/homepage/v6/download/video.html" target="_blank" class="more">更多 +</a>
+							精彩视频
+						</p>
+						<a href="javascript:" class="fl btn-video">
+							<div><p>敬请期待</p><i></i></div>
+						</a>
+						<a href="javascript:" class="fr btn-video">
+							<div><p>敬请期待</p><i></i></div>
+						</a>
+						<a href="javascript:" class="fl btn-video">
+							<div><p>敬请期待</p><i></i></div>
+						</a>
+						<a href="javascript:" class="fr btn-video">
+							<div><p>敬请期待</p><i></i></div>
+						</a>
+						<a href="javascript:" class="fl mb0 btn-video">
+							<div><p>敬请期待</p><i></i></div>
+						</a>
+						<a href="javascript:" class="fr mb0 btn-video">
+							<div><p>敬请期待</p><i></i></div>
+						</a>
+					</div>
+					<!-- 精彩视频 END  -->
+				</div>
+			</div>
+		</div>
+		<div class="pr section clearfix">
+			<div class="con">
+				<!-- 品牌专区 -->
+				<div class="col-left sect-evt">
+					<p class="title">
+						品牌专区
+					</p>
+					<div class="btn-evt mb20">
+						<script language="javascript" src="https://tcmgt.tiancity.com/layout.aspx?pst=2024&uparams=CS06sy01bd" charset="gb2312"></script>
+					</div>
+					<div class="btn-evt">
+						<script language="javascript" src="https://tcmgt.tiancity.com/layout.aspx?pst=2025&uparams=CS06sy02bd" charset="gb2312"></script>
+					</div>
+				</div>
+				<!-- 品牌专区 END -->
+
+				<!-- 游戏资料 -->
+				<div class="col-right sect-data">
+					<div class="title">
+						<a href="https://csol.tiancity.com/homepage/v6/material/weapons.html" target="_blank" class="more">更多 +</a>
+						<ul class="data-nav">
+							<li class="on"><a href="javascript:">武器</a></li>
+							<li><a href="javascript:">模式</a></li>
+							<li><a href="javascript:">角色</a></li>
+						</ul>
+					</div>
+					<div class="data-bar data-weapon on">
+						<div class="runBox" id="weaponLoop">
+							数据加载中...
+						</div>
+					</div>
+					<div class="pr data-bar data-mode">
+						<ul class="mode-list">
+							<li><a href="javascript:" class="mode-1" id="dzz"></a></li>
+							<li><a href="javascript:" class="mode-2 on" id="dzb"></a></li>
+							<li><a href="javascript:" class="mode-3" id="shyx"></a></li>
+							<li><a href="javascript:" class="mode-4" id="shwj"></a></li>
+							<li><a href="javascript:" class="mode-5" id="jj"></a></li>
+							<li><a href="javascript:" class="mode-6" id="tdjz"></a></li>
+						</ul>
+						<div class="pa mode-detail">
+							<a href="javascript:" class="pa close-btn"></a>
+						</div>
+					</div>
+					<div class="data-bar data-role">
+						<div class="runBox" id="roleLoop">
+							数据加载中...
+						</div>
+					</div>
+				</div>
+				<!-- 游戏资料 END -->
+			</div>
+		</div>
+		<div class="pr section clearfix">
+			<div class="con">
+				<div class="col-left sect-info">
+					<p class="title">
+						游戏信息
+					</p>
+					<div class="qr-bar">
+						<div class="fl qr-con">
+							<img src="https://img1.tiancitycdn.com/csol/homepage/v6/new/images/qr_weibo.jpg?" alt="">
+							扫一扫关注官方微博<br>第一时间了解最新资讯
+						</div>
+						<div class="fl qr-con">
+							<img src="https://img1.tiancitycdn.com/csol/homepage/v6/new/images/qr_wechat.jpg?" alt="">
+							扫一扫关注微信公众号<br>第一时间了解最新资讯
+						</div>
+					</div>
+					<div class="pr runBox" id="contactLoop">
+						<ul>
+							<li><a href="http://cso.uuu9.com/" target="_blank" class="fr"><img src="https://img1.tiancitycdn.com/csol/homepage/v6/new/images/media/u9.jpg" alt=""></a><a href="http://fight.pcgames.com.cn/csol" target="_blank" class="fl"><img src="https://img1.tiancitycdn.com/csol/homepage/v6/new/images/media/pc.jpg" alt=""></a></li>
+							<li><a href="http://csol.52pk.com/" target="_blank" class="fr"><img src="https://img1.tiancitycdn.com/csol/homepage/v6/new/images/media/52.jpg" alt=""></a><a href="http://cso.duowan.com/" target="_blank" class="fl"><img src="https://img1.tiancitycdn.com/csol/homepage/v6/new/images/media/dw.jpg" alt=""></a></li>
+							<li><a href="http://csol.aipai.com" target="_blank" class="fr"><img src="https://img1.tiancitycdn.com/csol/homepage/v6/new/images/media/ap.jpg" alt=""></a><a href="http://cso.17173.com/" target="_blank" class="fl"><img src="https://img1.tiancitycdn.com/csol/homepage/v6/new/images/media/17173.jpg" alt=""></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-right sect-design">
+					<p class="title">
+						<a href="https://csol.tiancity.com/homepage/event/2017/07/cs170720map" target="_blank" class="more">更多 +</a>
+						缔造者优秀地图
+					</p>
+					<div class="design-bar" id="designLoop">
+						数据加载中...
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="pr section sect-bottom clearfix">
+			<div class="con">
+				<div class="col-left sect-contact">
+					<p class="title">
+						联系客服
+					</p>
+					<div class="links">
+						<a href="http://know.tiancity.com/" class="btn-link lxkf"><i></i>联系客服</a>
+						<a href="http://help.tiancity.com/Home/Chat" target="_blank" class="btn-link zxkf"><i></i>在线客服</a>
+					</div>
+					<p class="contact">
+						联系邮箱 : <a href="mailto:csocs@tiancity.com" style="display:inline;color:#fff">csocs@tiancity.com</a><br>
+						客服电话 : 021-34144567
+					</p>
+				</div>
+				<div class="col-right sect-service">
+					<p class="title">
+						自助服务
+					</p>
+					<div class="links">
+						<a href="http://member.tiancity.com/User/IdInfoModify.aspx" target="_blank" class="btn-link smrz"><i></i>实名认证</a>
+						<a href="http://member.tiancity.com/User/PasswordGetBack.aspx" target="_blank" class="btn-link zhmm"><i></i>找回密码</a>
+						<a href="http://www.tiancity.com/others/jzjk/index.html" target="_blank" class="btn-link jhfw"><i></i>家长监护服务</a>
+						<a href="http://csol.tiancity.com/homepage/article/2016/04/01/49075.html" target="_blank" class="btn-link glff"><i></i>网络游戏暂行管理方法</a>
+					</div>
+					<p class="tips">
+						游戏健康公告&emsp;抵制不良游戏&emsp;拒绝盗版游戏&emsp;注意自我保护&emsp;谨防受骗上当&emsp;沉迷游戏伤身&emsp;合理安排时间&emsp;享受健康生活<br>
+						本游戏适合15岁以上人群
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<script src="https://csol.tiancity.com/homepage/copyright/csol_copyright_utf8.js?v=180702"></script>
+	</div>
+
+	<div class="pop-design">
+		<div class="pop-bg">
+			<div class="pop-con">
+				<a href="javascript:" class="btn-close"></a>
+				<p class="name"></p>
+				<p class="desc"></p>
+				<p class="info"></p>
+				<div class="run-container">
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://img1.tiancitycdn.com/project1/csol/common/jquery.easing.min.js"></script>
+	<script src="https://img1.tiancitycdn.com/project1/csol/common/common-1.2.3-utf8.min.js"></script>
+	<script src="https://img1.tiancitycdn.com/project1/csol/common/Yplayer/Yplayer.js"></script>
+	<script src="https://img1.tiancitycdn.com/csol/homepage/v6/new/js/jquery.slider.min.js"></script>
+	<script src="https://img1.tiancitycdn.com/csol/homepage/v6/new/js/main.js?v=180710a"></script>
+	<script language="javascript" src="https://tcmgt.tiancity.com/layout.aspx?pst=1998&uparams=gameTopPT" charset="gb2312"></script>
+</body>
+</html>
